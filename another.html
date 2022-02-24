@@ -20,6 +20,9 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
           <li class="nav-item me-5">
+            <a class="nav-link" href="javascript:void(0)" onclick="openNav()">Menu</a>
+          </li>
+          <li class="nav-item me-5">
             <a class="nav-link" aria-current="page" href="main-page.html#about">About us</a>
           </li>
           <li class="nav-item">
@@ -36,7 +39,15 @@
 
 <main>  
     
-
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a aria-current="page" href="main-page.html#about">About us</a>
+      <a href="main-page.html#pricelist">Pricelist</a>
+      <a href="main-page.html#equipment">Equipment</a>
+      <a href="javascript:void(o)" onclick="lofiTog()">On / Off music</a>
+    </div>
+  </div>
   <div class="container marketing">
     <hr class="divider-page" id="pricelist">
     <div class="row featurette">
@@ -67,7 +78,9 @@
 </main>
 
 
-    <script src="bootstrap.bundle.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 
       
   </body>

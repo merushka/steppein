@@ -11,6 +11,17 @@
     
 
 <header>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a aria-current="page" href="#about">About us</a>
+      <a href="#pricelist">Pricelist</a>
+      <a href="#equipment">Equipment</a>
+      <a href="another.html">Contact us</a>
+      <a href="javascript:void(o)" onclick="lofiTog()">On / Off music</a>
+      <p class="lead">Click 'b' to play / stop music using your keyboard.</p>
+    </div>
+  </div>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid container py-1">
       <a class="navbar-brand" href="index.html">Steppe In</a>
@@ -19,6 +30,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item me-5">
+            <a class="nav-link" href="javascript:void(0)" onclick="openNav()">Menu</a>
+          </li>
           <li class="nav-item me-5">
             <a class="nav-link" aria-current="page" href="#about">About us</a>
           </li>
@@ -74,6 +88,7 @@
         <h2 class="featurette-heading">We intend to combine the incompatible-old and new, <span class="text-muted"> <br> forgotten and desired</span>.</h2> <br>
         <p class="lead">Our goal is to create beauty in all its manifestations and to revive the photo and video industry in a unique and original presentation. </p> <br>
         <p><strong>Our studio is open for your new unusual meetings and ideas.</strong></p>
+        <button class="btn btn-secondary" id="thankyou">Thank you</button>
       </div>
       <div class="col-md-5">
         <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="img/1.jpeg" alt="">
@@ -123,14 +138,15 @@
   </div>
 
   <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
+    <p class="float-end"><a href="#"><img src="font-awesome-svg/circle-arrow-up.svg" width="30px"></a></p>
     <p>With love for <a href="">"Steppe In"</a> photo studio. </p>
   </footer>
 </main>
 
 
     <script src="bootstrap.bundle.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
       
   </body>
 </html>
